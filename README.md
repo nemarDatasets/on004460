@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004460-blue)](https://doi.org/10.82901/nemar.on004460)
+
 An EEG + motion capture data set, analyzed and published in "Gramann, K., Hohlefeld, F. U., Gehrke, L., & Klug, M. (2021). Human cortical dynamics during full-body heading changes. Scientific Reports, 11(1), 18186".
 
 Used as a BIDS-example data set for EEG + motion : https://github.com/bids-standard/bids-examples/tree/master/motion_spotrotation
