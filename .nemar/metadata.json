@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG and motion capture data set for a full-body/joystick rotation task",
+  "description": "This dataset comprises simultaneous EEG and motion capture recordings from 20 healthy adults performing a spatial orientation task involving full-body heading changes. Participants completed a spot rotation task under two conditions: joystick-controlled visual rotation on a 2D display and physical full-body rotation in a virtual reality environment. The dataset includes 157-channel EEG data (129 scalp + 28 neck electrodes) sampled at 1000 Hz and multi-camera motion capture data at 90 Hz, enabling investigation of cortical dynamics and sensorimotor integration during naturalistic spatial navigation.",
+  "methods_description": "EEG was recorded from 157 active electrodes (129 scalp, 28 neck) at 1000 Hz using a BrainAmp Move System with 0.016-500 Hz band-pass filtering. Motion capture employed 19 active LEDs tracked by 31 cameras (Impulse X2 System) at 90 Hz, supplemented by inertial measurement units on the head and torso. Participants performed a self-paced spot rotation task in two conditions: joystick-controlled visual rotation on a 2D display and physical full-body rotation in a head-mounted VR display (HTC Vive), each preceded by a 3-minute baseline recording.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,12 +18,30 @@
       "orcid": "0000-0001-8667-3457"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004460.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "motion capture"
+    },
+    {
+      "term": "spatial navigation"
+    },
+    {
+      "term": "vestibular system"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "virtual reality"
+    },
+    {
+      "term": "head-mounted display"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1038/s41598-021-97749-8",
       "identifier_type": "DOI",
@@ -36,6 +56,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004460",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004460.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -45,13 +70,13 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg",
     "motion"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "65.9 GB (215 files)"
   ],
   "formats": [
     ".eeg",
@@ -59,32 +84,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises synchronized EEG and motion capture recordings from 19 healthy adults performing a spatial orientation task involving full-body heading changes. Participants completed a spot rotation task under two conditions: joystick-controlled visual rotation on a 2D display and physical full-body rotation in a virtual reality environment. The study investigates cortical dynamics and neural mechanisms underlying spatial navigation and heading control in naturalistic movement contexts.",
-  "methods_description": "EEG data were recorded from 157 active electrodes (129 scalp, 28 neck) at 1000 Hz sampling rate using a BrainAmp Move System with 0.016-500 Hz band-pass filtering. Motion capture was acquired via two systems: PhaseSpace Impulse X2 (31 cameras, 90 Hz, 19 LEDs) and HTC Vive head-mounted display tracking. Participants performed a self-paced spatial orientation task in a virtual environment, alternating between joystick-controlled and physical rotation conditions, each preceded by a 3-minute baseline recording.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motion capture"
-    },
-    {
-      "term": "spatial navigation"
-    },
-    {
-      "term": "heading control"
-    },
-    {
-      "term": "virtual reality"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "cortical dynamics"
-    }
-  ],
-  "source_hash": "3230643d6a692a9d88124dc16fd92cc0f68ffd74e5cfd7ccc5bda5c6038a3287"
+  "source_hash": "2071c80b4f0b1cb23e9db7cccd266cfb63ea285caef7df63ce9e0235eb77ae08"
 }
