@@ -1,38 +1,90 @@
 {
   "version": "2.0",
-  "dataset_id": "on004460",
-  "source": "openneuro",
-  "source_id": "ds004460",
+  "pipeline_stage": "validated",
   "title": "EEG and motion capture data set for a full-body/joystick rotation task",
-  "authors": {
-    "Gramann, K.": {},
-    "Hohlefeld, F.U.": {},
-    "Gehrke, L.": {},
-    "Klug, M": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Gramann, K.": {
+      "orcid": "0000-0003-2673-1832"
+    },
+    "Hohlefeld, F.U.": {},
+    "Gehrke, L.": {
+      "orcid": "0000-0003-3661-1973"
+    },
+    "Klug, M": {
+      "orcid": "0000-0001-8667-3457"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004460.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1038/s41598-021-97749-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004460",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004460",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "n/a",
-  "recording_modality": [
-    "eeg",
-    "motion"
-  ],
-  "datatypes": [
-    "eeg",
-    "motion"
   ],
   "funding_references": [
     {
-      "funder_name": "the German Research Foundation (DFG) Grant No. GR 2627/8-1, Open Access funding enabled and organized by Projekt DEAL."
+      "funder_name": "DFG",
+      "award_number": "GR 2627/8-1"
     }
   ],
-  "acknowledgements": "We gratefully acknowledge the help of Jonna Jürs and Yiru Chen with the data acquisition and pre-processing."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg",
+    "motion"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises synchronized EEG and motion capture recordings from 19 healthy adults performing a spatial orientation task involving full-body heading changes. Participants completed a spot rotation task under two conditions: joystick-controlled visual rotation on a 2D display and physical full-body rotation in a virtual reality environment. The study investigates cortical dynamics and neural mechanisms underlying spatial navigation and heading control in naturalistic movement contexts.",
+  "methods_description": "EEG data were recorded from 157 active electrodes (129 scalp, 28 neck) at 1000 Hz sampling rate using a BrainAmp Move System with 0.016-500 Hz band-pass filtering. Motion capture was acquired via two systems: PhaseSpace Impulse X2 (31 cameras, 90 Hz, 19 LEDs) and HTC Vive head-mounted display tracking. Participants performed a self-paced spatial orientation task in a virtual environment, alternating between joystick-controlled and physical rotation conditions, each preceded by a 3-minute baseline recording.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motion capture"
+    },
+    {
+      "term": "spatial navigation"
+    },
+    {
+      "term": "heading control"
+    },
+    {
+      "term": "virtual reality"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "cortical dynamics"
+    }
+  ],
+  "source_hash": "3230643d6a692a9d88124dc16fd92cc0f68ffd74e5cfd7ccc5bda5c6038a3287"
 }
