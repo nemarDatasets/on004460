@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG and motion capture data set for a full-body/joystick rotation task",
-  "description": "This dataset comprises simultaneous EEG and motion capture recordings from 20 healthy adults performing a spatial orientation task involving full-body heading changes. Participants completed a spot rotation task under two conditions: joystick-controlled visual rotation on a 2D display and physical full-body rotation in a virtual reality environment. The dataset includes 157-channel EEG data (129 scalp + 28 neck electrodes) sampled at 1000 Hz and multi-camera motion capture data at 90 Hz, enabling investigation of cortical dynamics and sensorimotor integration during naturalistic spatial navigation.",
-  "methods_description": "EEG was recorded from 157 active electrodes (129 scalp, 28 neck) at 1000 Hz using a BrainAmp Move System with 0.016-500 Hz band-pass filtering. Motion capture employed 19 active LEDs tracked by 31 cameras (Impulse X2 System) at 90 Hz, supplemented by inertial measurement units on the head and torso. Participants performed a self-paced spot rotation task in two conditions: joystick-controlled visual rotation on a 2D display and physical full-body rotation in a head-mounted VR display (HTC Vive), each preceded by a 3-minute baseline recording.",
+  "description": "A mobile brain/body imaging (MoBI) dataset combining 157-channel EEG and full-body motion capture from 20 healthy adults performing a spatial heading-change task. Participants followed a moving sphere and returned to their initial heading either by physically rotating on the spot or by using a joystick with a 2D desktop display. The dataset supports investigation of human cortical dynamics during full-body rotation and is formatted according to BIDS.",
+  "methods_description": "EEG was recorded from 157 active electrodes (129 scalp, 28 neck) at 1000 Hz with a BrainAmp Move system. Motion capture used a PhaseSpace Impulse X2 system with 19 LEDs at 90 Hz. Participants completed a spot-rotation task in a virtual environment under joystick (desktop monitor) and physical rotation (HTC Vive head-mounted display) conditions, each preceded by a 3-minute baseline. Electrode locations were digitized with an optical tracking system.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,26 +26,28 @@
       "term": "motion capture"
     },
     {
-      "term": "spatial navigation"
+      "term": "Mobile Brain/Body Imaging"
     },
     {
-      "term": "vestibular system"
-    },
-    {
-      "term": "motor imagery"
+      "term": "spatial orientation"
     },
     {
       "term": "virtual reality"
     },
     {
-      "term": "head-mounted display"
+      "term": "heading change"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41598-021-97749-8",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004460",
@@ -53,19 +55,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004460",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004460.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004460",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "DFG",
+      "funder_name": "German Research Foundation (DFG)",
       "award_number": "GR 2627/8-1"
     }
   ],
@@ -76,7 +78,7 @@
     "motion"
   ],
   "sizes": [
-    "65.9 GB (215 files)"
+    "61.33 GB (215 files)"
   ],
   "formats": [
     ".eeg",
